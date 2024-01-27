@@ -12,8 +12,7 @@ let headers={
 
 
 button.addEventListener("click", async () => {
-    let response = await axios.get('https://rocket-league1.p.rapidapi.com/stat/GucciLane97/saves', {headers});
+    // let response = await axios.get('https://rocket-league1.p.rapidapi.com/ranks/GucciLane97', {headers});
+    let response = await axios.get('https://api-nba-v1.p.rapidapi.com/ranks/GucciLane97', {headers});
     console.log(response)
 })
-
-console.log(headers)
