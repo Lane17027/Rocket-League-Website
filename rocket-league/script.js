@@ -1,5 +1,4 @@
-const button = document.querySelector("#submitButton");
-const input = document.querySelector("#textInput");
+
 
 let headers={
     'User-Agent': 'RapidAPI Playground',
@@ -11,8 +10,8 @@ let headers={
 
 
 
-button.addEventListener("click", async () => {
-    // let response = await axios.get('https://rocket-league1.p.rapidapi.com/ranks/GucciLane97', {headers});
-    let response = await axios.get('https://api-nba-v1.p.rapidapi.com/ranks/GucciLane97', {headers});
-    console.log(response)
-})
+// button.addEventListener("click", async () => {
+//     let response = await axios.get('https://rocket-league1.p.rapidapi.com/stat/GucciLane97/assists', {headers});
+//     // let response = await axios.get('https://rocket-league1.p.rapidapi.com/ranks/GucciLane97', {headers});
+//     console.log(response)
+// })

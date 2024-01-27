@@ -5,14 +5,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rocket League</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="https://cdn2.steamgriddb.com/icon_thumb/3e97f8a21231307807472705ecdf4a97.png" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js"></script>
   </head>
   <body>
-      <input id="textInput" type="text" placeholder="enter city here" />
-      <button id="submitButton">Click Here</button>
+
+      <h1>This is Rocket League!</h1>
+
+      <div class="inputs-button">
+
+        <input id="textInput" type="text" placeholder="Enter Epic ID" />
+
+        <input list="stat-rank"  placeholder="Stat or Ranks?" /></label>
+        <datalist id="stat-rank">
+            <option value="stat">
+            <option value="ranks">
+        </datalist>
+
+
+
+        <input list="stat-type" placeholder="Select a stat" /></label>
+        <datalist id="stat-type">
+            <option value="assists">
+            <option value="goals">
+            <option value="mvps">
+            <option value="saves">
+            <option value="shots">
+            <option value="wins">
+        </datalist>
+
+        <button id="submitButton">Submit</button>
+
+
+
+      </div>
+
+      <div class="results-container">
+        <div>Duos</div>
+        <div>Champion I</div>
+        <div>hello</div>
+        <div>hi</div>
+        <div>hi</div>
+        <div>hello</div>
+        <div>hello</div>
+        <div>hi</div>
+        <div>hi</div>
+        <div>hello</div>
+        <div>hello</div>
+        <div>hi</div>
+      </div>
+
+      <div class="video-container">
+        <iframe width="500" height="315" loop=1
+src="https://www.youtube.com/embed/R5T_UuqE9-Y?autoplay=1&mute=1&loop=1&hd=1">
+</iframe>
+      </div>
+
+
 
   </body>
   </html>
