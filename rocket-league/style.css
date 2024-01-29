@@ -1,40 +1,46 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(https://themeistermentality.files.wordpress.com/2021/05/dfh_stadium_arena_preview.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://themeistermentality.files.wordpress.com/2021/05/dfh_stadium_arena_preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.inputs-button{
-    justify-content: space-evenly;
-    width: auto;
+.inputs-button {
+  justify-content: space-evenly;
+  width: auto;
 }
 
-h1{
-    color: white;
+h1 {
+  color: white;
 }
 
-.results-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 5%;
-    width: 100%;
-    justify-content: center;
+.results-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 2%;
+  /* width: 100%; */
+  justify-content: center;
 }
 
-.results-container >div{
-    margin:5% 50px;
-    color: white;
-    font-size: 40px;
+.results-container > div {
+  /* margin: 5% 10px; */
+  color: white;
+  font-size: 40px;
 }
 
-video{
-    justify-content: center;
-    margin-top: 500px;
+.video-container {
+  justify-content: center;
+  margin-top: 1%;
+}
 
+.remove{
+  display: none;
 }
 
 
-/* https://img.goodfon.com/wallpaper/big/0/24/rocket-league-field-videogame-game-football.jpg */
+.right{
+  /* border: 1px solid red; */
+}

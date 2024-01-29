@@ -16,9 +16,9 @@
 
       <div class="inputs-button">
 
-        <input id="textInput" type="text" placeholder="Enter Epic ID" />
+        <input id="userName" type="text" placeholder="Enter Epic ID" />
 
-        <input list="stat-rank"  placeholder="Stat or Ranks?" /></label>
+        <input id="statRank" list="stat-rank"  placeholder="Stat or Ranks?" /></label>
         <datalist id="stat-rank">
             <option value="stat">
             <option value="ranks">
@@ -26,7 +26,7 @@
 
 
 
-        <input list="stat-type" placeholder="Select a stat" /></label>
+        <input id="statType" list="stat-type" placeholder="Select a stat" /></label>
         <datalist id="stat-type">
             <option value="assists">
             <option value="goals">
@@ -38,31 +38,43 @@
 
         <button id="submitButton">Submit</button>
 
+      <button id="resetButton">Reset</button>
+
 
 
       </div>
 
       <div class="results-container">
-        <div>Duos</div>
-        <div>Champion I</div>
-        <div>hello</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hello</div>
-        <div>hello</div>
-        <div>hi</div>
+        <div class="stat" id="stat-name"></div>
+        <div class="stat right" id="stat-value"></div>
+
+        <div id="duel-title"></div>
+        <div id="duel-value" class="stat right"></div>
+
+        <div id="doubles-title"></div>
+        <div id="doubles-value" class="stat right"></div>
+
+        <div id="standard-title"></div>
+        <div id="standard-value" class="stat right"></div>
+
+        <div id="hoops-title"></div>
+        <div id="hoops-value" class="stat right"></div>
+
+        <div id="rumble-title"></div>
+        <div id="rumble-value" class="stat right"></div>
+
+        <div id="dropshot-title"></div>
+        <div id="dropshot-value" class="stat right"></div>
+
+        <div id="snow-day-title"></div>
+        <div id="snow-day-value" class="stat right"></div>
       </div>
 
       <div class="video-container">
         <iframe width="500" height="315" loop=1
-src="https://www.youtube.com/embed/R5T_UuqE9-Y?autoplay=1&mute=1&loop=1&hd=1">
-</iframe>
+        src="https://www.youtube.com/embed/AUnsVNYWVFs?autoplay=1&mute=1&loop=1&hd=1">
+      </iframe>
       </div>
-
 
 
   </body>
