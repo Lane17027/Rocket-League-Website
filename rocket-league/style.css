@@ -30,9 +30,10 @@ h1 {
 
 .rank-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   margin-top: 0%;
   justify-content: center;
+  grid-row-gap: 10px;
 }
 
 /* .results-container > div {
@@ -54,6 +55,9 @@ h1 {
   width: auto;
   color: white;
   font-size: 40px;
+  background: -webkit-linear-gradient(#9b9b9b, #222222);
+  padding-left: 4px;
+  padding-right: 4px;
   text-shadow:
         0.05em 0 black,
         0 0.05em black,
@@ -68,3 +72,11 @@ h1 {
 .right {
   padding-left: 5px;
 }
+
+img{
+  width: 40px;
+  height: 40px;
+  padding-left: 5px;
+
+}
+
