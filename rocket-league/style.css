@@ -13,6 +13,10 @@ body {
   width: auto;
 }
 
+.inputs-button > *{
+  min-height: 21px;
+}
+
 h1 {
   color: white;
 }
@@ -21,26 +25,46 @@ h1 {
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 2%;
-  /* width: 100%; */
   justify-content: center;
 }
 
-.results-container > div {
-  /* margin: 5% 10px; */
+.rank-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 0%;
+  justify-content: center;
+}
+
+/* .results-container > div {
+  width: auto;
   color: white;
   font-size: 40px;
-}
+} */
 
 .video-container {
   justify-content: center;
   margin-top: 1%;
 }
 
-.remove{
+.remove {
   display: none;
 }
 
+.rank-container > div, .results-container > div {
+  width: auto;
+  color: white;
+  font-size: 40px;
+  text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+}
 
-.right{
-  /* border: 1px solid red; */
+.right {
+  padding-left: 5px;
 }
