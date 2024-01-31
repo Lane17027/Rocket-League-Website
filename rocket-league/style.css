@@ -36,12 +36,6 @@ h1 {
   grid-row-gap: 10px;
 }
 
-/* .results-container > div {
-  width: auto;
-  color: white;
-  font-size: 40px;
-} */
-
 .video-container {
   justify-content: center;
   margin-top: 1%;
@@ -78,5 +72,9 @@ img{
   height: 40px;
   padding-left: 5px;
 
+}
+
+button:hover{
+  cursor: pointer;
 }
 

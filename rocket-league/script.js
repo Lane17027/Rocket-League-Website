@@ -144,6 +144,7 @@ submitButton.addEventListener("click", async (event) => {
   if (statPrefix == "ranks") {
     options.url = `https://rocket-league1.p.rapidapi.com/ranks/${userNameValue}`;
     let response = await axios.request(options);
+    console.log(response)
     let ranksArr = response.data.ranks;
     let duel = ranksArr[0];
     let duelInfo = `${duel.rank}(Division ${duel.division})`;
@@ -202,7 +203,7 @@ submitButton.addEventListener("click", async (event) => {
       } else if (rank.innerHTML.includes("Diamond")) {
         rank.style.color = "#0b07f2";
       } else if (rank.innerHTML.includes("Platinum")) {
-        rank.style.color = "#1f8ded";
+        rank.style.color = "#00d4ff";
       }
     }
 
