@@ -123,12 +123,12 @@ let headers = {
 };
 
 statRank.addEventListener("change", () => {
-  if (statRank.value == "ranks") {
+  if (statRank.value.toLowerCase() == "ranks") {
     statType.classList.add("remove");
   }
 
   if (
-    (statRank.value == "" || statRank.value == "stat") &&
+    (statRank.value == "" || statRank.value.toLowerCase() == "stat") &&
     statType.classList.contains("remove")
   ) {
     statType.classList.remove("remove");
@@ -138,8 +138,8 @@ statRank.addEventListener("change", () => {
 submitButton.addEventListener("click", async (event) => {
   event.preventDefault();
   let userNameValue = userName.value;
-  let statPrefix = statRank.value;
-  let stat = statType.value;
+  let statPrefix = statRank.value.toLowerCase();
+  let stat = statType.value.toLowerCase();
 
   if (statPrefix == "stat") {
     let url = `https://rocket-league1.p.rapidapi.com/${statPrefix}/${userNameValue}/${stat}`;
@@ -720,23 +720,9 @@ submitButton.addEventListener("click", async (event) => {
 });
 
 resetButton.addEventListener("click", () => {
-  // userName.value = "";
-  // statRank.value = "";
-  // statType.value = "";
-  // statName.innerHTML = "";
-  // statValue.innerHTML = "";
-  // duelTitleDiv.innerHTML = "";
-  // duelValueDiv.innerHTML = "";
-  // doublesTitleDiv.innerHTML = "";
-  // doublesValueDiv.innerHTML = "";
-  // standardTitleDiv.innerHTML = "";
-  // standardValueDiv.innerHTML = "";
-  // duelMMRDiv.innerHTML = "";
-  // doublesMMRDiv.innerHTML = "";
-  // standardMMRDiv.innerHTML = "";
-  // duelImg.innerHTML = "";
-  // doublesImg.innerHTML = "";
-  // standardImg.innerHTML = "";
+  userName.value = "";
+  statRank.value = "";
+  statType.value = "";
   for (let reset of allReset){
     reset.innerHTML=''
   }
