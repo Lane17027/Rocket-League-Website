@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rocket League</title>
+    <title>Rocket League Stats Tracker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="https://cdn2.steamgriddb.com/icon_thumb/3e97f8a21231307807472705ecdf4a97.png"/>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -71,41 +71,47 @@
       </div>
 
       <div class="rank-container">
-        <div id="duel-title"></div>
-        <div id="duel-img"></div>
-        <div id="duel-value" class="rank rank-value"></div>
-        <div id="duel-mmr" class="rank right mmr"></div>
+        <div id="duel-title" class="reset"></div>
+        <div id="duel-img" class="reset"></div>
+        <div id="duel-value" class="rank rank-value reset"></div>
+        <div id="duel-mmr" class="rank right mmr reset"></div>
 
-        <div id="doubles-title"></div>
-        <div id="doubles-img"></div>
-        <div id="doubles-value" class="rank rank-value"></div>
-        <div id="doubles-mmr" class="rank right mmr"></div>
+        <div id="doubles-title" class="reset"></div>
+        <div id="doubles-img" class="reset"></div>
+        <div id="doubles-value" class="rank rank-value reset"></div>
+        <div id="doubles-mmr" class="rank right mmr reset"></div>
 
-        <div id="standard-title"></div>
-        <div id="standard-img"></div>
-        <div id="standard-value" class="rank rank-value"></div>
-        <div id="standard-mmr" class="rank right mmr"></div>
+        <div id="standard-title" class="reset reset"></div>
+        <div id="standard-img" class="reset reset"></div>
+        <div id="standard-value" class="rank rank-value reset"></div>
+        <div id="standard-mmr" class="rank right mmr reset"></div>
+      </div>
 
-        <div id="hoops-title"></div>
-        <div id="hoops-value" class="rank rank-value"></div>
-        <div id="hoops-mmr" class="rank right mmr"></div>
+      <div class="bonus-rank-container">
+        <div id="hoops-title" class="reset"></div>
+        <div id="hoops-img" class="reset">hi</div>
+        <div id="hoops-value" class="rank rank-value reset"></div>
+        <div id="hoops-mmr" class="rank right mmr reset"></div>
 
-        <div id="rumble-title"></div>
-        <div id="rumble-value" class="rank rank-value"></div>
-        <div id="rumble-mmr" class="rank right mmr"></div>
+        <div id="rumble-title" class="reset"></div>
+        <div id="rumble-img" class="reset">hi</div>
+        <div id="rumble-value" class="rank rank-value reset"></div>
+        <div id="rumble-mmr" class="rank right mmr reset"></div>
 
-        <div id="dropshot-title"></div>
-        <div id="dropshot-value" class="rank rank-value"></div>
-        <div id="dropshot-mmr" class="rank right mmr"></div>
+        <div id="dropshot-title" class="reset"></div>
+        <div id="dropshot-img" class="reset">hi</div>
+        <div id="dropshot-value" class="rank rank-value reset"></div>
+        <div id="dropshot-mmr" class="rank right mmr reset"></div>
 
-        <div id="snow-day-title"></div>
-        <div id="snow-day-value" class="rank rank-value"></div>
-        <div id="snow-day-mmr" class="rank right mmr"></div>
+        <div id="snow-day-title" class="reset"></div>
+        <div id="dropshot-img" class="reset">hi</div>
+        <div id="snow-day-value" class="rank rank-value reset"></div>
+        <div id="snow-day-mmr" class="rank right mmr reset"></div>
 
       </div>
 
       <div class="video-container">
-        <iframe width="700" height="415" loop=1
+        <iframe loop=1
         src="https://www.youtube.com/embed/AUnsVNYWVFs?autoplay=1&mute=1&loop=1&hd=1">
       </iframe>
       </div>
