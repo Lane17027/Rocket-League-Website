@@ -43,6 +43,7 @@ let standardImg = document.getElementById("standard-img");
 let hoopsImg=document.getElementById('hoops-img')
 let rumbleImg=document.getElementById('rumble-img')
 let dropshotImg=document.getElementById('dropshot-img')
+let snowDayImg=document.getElementById('snow-day-img')
 
 
 //All divs that display specific rank
@@ -187,7 +188,7 @@ submitButton.addEventListener("click", async (event) => {
     dropshotValueDiv.innerHTML = dropshotInfo;
     dropshotMMRDiv.innerHTML = `MMR: ${dropshot.mmr}`;
 
-    let snowDay = ranksArr[3];
+    let snowDay = ranksArr[6];
     let snowDayInfo = `${snowDay.rank}(Division ${snowDay.division})`;
     snowDayTitleDiv.innerHTML = snowDay.playlist + ":";
     snowDayValueDiv.innerHTML = snowDayInfo;
@@ -227,7 +228,7 @@ submitButton.addEventListener("click", async (event) => {
   let duelRank = duelValueDiv.innerHTML.split("(")[0];
 
   //Adding Duel Rank Image
-  if (duelValueDiv.innerHTML == "Unranked") {
+  if (duelValueDiv.innerHTML.includes("Unranked")) {
     duelImg.innerHTML = unranked;
   }
   if (duelRank == "Bronze I") {
@@ -298,7 +299,7 @@ submitButton.addEventListener("click", async (event) => {
 
   let doublesRank = doublesValueDiv.innerHTML.split("(")[0];
 
-  if (doublesValueDiv.innerHTML == "Unranked") {
+  if (doublesValueDiv.innerHTML.includes("Unranked")) {
     doublesImg.innerHTML = unranked;
   }
   if (doublesRank == "Bronze I") {
@@ -368,7 +369,7 @@ submitButton.addEventListener("click", async (event) => {
   //Adding standard Img
   let standardRank = standardValueDiv.innerHTML.split("(")[0];
 
-  if (standardValueDiv.innerHTML == "Unranked") {
+  if (standardValueDiv.innerHTML.includes("Unranked")) {
     standardImg.innerHTML = unranked;
   }
   if (standardRank == "Bronze I") {
@@ -438,7 +439,7 @@ submitButton.addEventListener("click", async (event) => {
 //adding  hoops div image
   let hoopsRank = hoopsValueDiv.innerHTML.split("(")[0]
 
-  if (hoopsValueDiv.innerHTML == "Unranked") {
+  if (hoopsValueDiv.innerHTML.includes("Unranked")) {
     hoopsImg.innerHTML = unranked;
   }
   if (hoopsRank == "Bronze I") {
@@ -503,6 +504,218 @@ submitButton.addEventListener("click", async (event) => {
   }
   if (hoopsRank == "Grand Champion III") {
     hoopsImg.innerHTML = grandChamp3;
+  }
+
+
+  //Adding Rumble div img
+  let rumbleRank = rumbleValueDiv.innerHTML.split("(")[0]
+
+  if (rumbleValueDiv.innerHTML.includes("Unranked")) {
+    rumbleImg.innerHTML = unranked;
+  }
+  if (rumbleRank == "Bronze I") {
+    rumbleImg.innerHTML = bronze1;
+  }
+  if (rumbleRank == "Bronze II") {
+    rumbleImg.innerHTML = bronze2;
+  }
+  if (rumbleRank == "Bronze III") {
+    rumbleImg.innerHTML = bronze3;
+  }
+  if (rumbleRank == "Silver I") {
+    rumbleImg.innerHTML = silver1;
+  }
+  if (rumbleRank == "Silver II") {
+    rumbleImg.innerHTML = silver2;
+  }
+  if (rumbleRank == "Silver III") {
+    rumbleImg.innerHTML = silver3;
+  }
+  if (rumbleRank == "Gold I") {
+    rumbleImg.innerHTML = gold1;
+  }
+  if (rumbleRank == "Gold II") {
+    rumbleImg.innerHTML = gold2;
+  }
+  if (rumbleRank == "Gold III") {
+    rumbleImg.innerHTML = gold3;
+  }
+  if (rumbleRank == "Platinum I") {
+    rumbleImg.innerHTML = platinum1;
+  }
+  if (rumbleRank == "Platinum II") {
+    rumbleImg.innerHTML = platinum2;
+  }
+  if (rumbleRank == "Platinum III") {
+    rumbleImg.innerHTML = platinum3;
+  }
+  if (rumbleRank == "Diamond I") {
+    rumbleImg.innerHTML = diamond1;
+  }
+  if (rumbleRank == "Diamond II") {
+    rumbleImg.innerHTML = diamond2;
+  }
+  if (rumbleRank == "Diamond III") {
+    rumbleImg.innerHTML = diamond3;
+  }
+  if (rumbleRank == "Champion I") {
+    rumbleImg.innerHTML = champ1;
+  }
+  if (rumbleRank == "Champion II") {
+    rumbleImg.innerHTML = champ2;
+  }
+  if (rumbleRank == "Champion III") {
+    rumbleImg.innerHTML = champ3;
+  }
+  if (rumbleRank == "Grand Champion I") {
+    rumbleImg.innerHTML = grandChamp1;
+  }
+  if (rumbleRank == "Grand Champion II") {
+    rumbleImg.innerHTML = grandChamp2;
+  }
+  if (rumbleRank == "Grand Champion III") {
+    rumbleImg.innerHTML = grandChamp3;
+  }
+
+
+
+  let dropshotRank = dropshotValueDiv.innerHTML.split("(")[0]
+
+  if (dropshotValueDiv.innerHTML.includes("Unranked")) {
+    dropshotImg.innerHTML = unranked;
+  }
+  if (dropshotRank == "Bronze I") {
+    dropshotImg.innerHTML = bronze1;
+  }
+  if (dropshotRank == "Bronze II") {
+    dropshotImg.innerHTML = bronze2;
+  }
+  if (dropshotRank == "Bronze III") {
+    dropshotImg.innerHTML = bronze3;
+  }
+  if (dropshotRank == "Silver I") {
+    dropshotImg.innerHTML = silver1;
+  }
+  if (dropshotRank == "Silver II") {
+    dropshotImg.innerHTML = silver2;
+  }
+  if (dropshotRank == "Silver III") {
+    dropshotImg.innerHTML = silver3;
+  }
+  if (dropshotRank == "Gold I") {
+    dropshotImg.innerHTML = gold1;
+  }
+  if (dropshotRank == "Gold II") {
+    dropshotImg.innerHTML = gold2;
+  }
+  if (dropshotRank == "Gold III") {
+    dropshotImg.innerHTML = gold3;
+  }
+  if (dropshotRank == "Platinum I") {
+    dropshotImg.innerHTML = platinum1;
+  }
+  if (dropshotRank == "Platinum II") {
+    dropshotImg.innerHTML = platinum2;
+  }
+  if (dropshotRank == "Platinum III") {
+    dropshotImg.innerHTML = platinum3;
+  }
+  if (dropshotRank == "Diamond I") {
+    dropshotImg.innerHTML = diamond1;
+  }
+  if (dropshotRank == "Diamond II") {
+    dropshotImg.innerHTML = diamond2;
+  }
+  if (dropshotRank == "Diamond III") {
+    dropshotImg.innerHTML = diamond3;
+  }
+  if (dropshotRank == "Champion I") {
+    dropshotImg.innerHTML = champ1;
+  }
+  if (dropshotRank == "Champion II") {
+    dropshotImg.innerHTML = champ2;
+  }
+  if (dropshotRank == "Champion III") {
+    dropshotImg.innerHTML = champ3;
+  }
+  if (dropshotRank == "Grand Champion I") {
+    dropshotImg.innerHTML = grandChamp1;
+  }
+  if (dropshotRank == "Grand Champion II") {
+    dropshotImg.innerHTML = grandChamp2;
+  }
+  if (dropshotRank == "Grand Champion III") {
+    dropshotImg.innerHTML = grandChamp3;
+  }
+
+
+  let snowDayRank =snowDayValueDiv.innerHTML.split("(")[0]
+
+  if (snowDayValueDiv.innerHTML.includes("Unranked")) {
+   snowDayImg.innerHTML = unranked;
+  }
+  if (snowDayRank == "Bronze I") {
+   snowDayImg.innerHTML = bronze1;
+  }
+  if (snowDayRank == "Bronze II") {
+   snowDayImg.innerHTML = bronze2;
+  }
+  if (snowDayRank == "Bronze III") {
+   snowDayImg.innerHTML = bronze3;
+  }
+  if (snowDayRank == "Silver I") {
+   snowDayImg.innerHTML = silver1;
+  }
+  if (snowDayRank == "Silver II") {
+   snowDayImg.innerHTML = silver2;
+  }
+  if (snowDayRank == "Silver III") {
+   snowDayImg.innerHTML = silver3;
+  }
+  if (snowDayRank == "Gold I") {
+   snowDayImg.innerHTML = gold1;
+  }
+  if (snowDayRank == "Gold II") {
+   snowDayImg.innerHTML = gold2;
+  }
+  if (snowDayRank == "Gold III") {
+   snowDayImg.innerHTML = gold3;
+  }
+  if (snowDayRank == "Platinum I") {
+   snowDayImg.innerHTML = platinum1;
+  }
+  if (snowDayRank == "Platinum II") {
+   snowDayImg.innerHTML = platinum2;
+  }
+  if (snowDayRank == "Platinum III") {
+   snowDayImg.innerHTML = platinum3;
+  }
+  if (snowDayRank == "Diamond I") {
+   snowDayImg.innerHTML = diamond1;
+  }
+  if (snowDayRank == "Diamond II") {
+   snowDayImg.innerHTML = diamond2;
+  }
+  if (snowDayRank == "Diamond III") {
+   snowDayImg.innerHTML = diamond3;
+  }
+  if (snowDayRank == "Champion I") {
+   snowDayImg.innerHTML = champ1;
+  }
+  if (snowDayRank == "Champion II") {
+   snowDayImg.innerHTML = champ2;
+  }
+  if (snowDayRank == "Champion III") {
+   snowDayImg.innerHTML = champ3;
+  }
+  if (snowDayRank == "Grand Champion I") {
+   snowDayImg.innerHTML = grandChamp1;
+  }
+  if (snowDayRank == "Grand Champion II") {
+   snowDayImg.innerHTML = grandChamp2;
+  }
+  if (snowDayRank == "Grand Champion III") {
+   snowDayImg.innerHTML = grandChamp3;
   }
 });
 

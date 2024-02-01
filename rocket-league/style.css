@@ -33,12 +33,12 @@ h1 {
   grid-template-columns: auto auto auto auto;
   margin-top: 0%;
   justify-content: center;
-  grid-row-gap: 10px;
+  grid-row-gap: 4%;
 }
 
 .video-container {
   justify-content: center;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 .remove {
@@ -81,12 +81,15 @@ iframe{
   width: 700px;
   height: 415px;
 }
+.bonus-rank-container{
+  margin-top: 1%;
+}
 
 @media screen and (max-width:390px) {
   .inputs-button{
     display: grid;
     grid-template-columns: auto;
-    grid-row-gap: 10px;
+    grid-row-gap: 1%;
   }
   iframe{
     width: 300px;
@@ -94,7 +97,9 @@ iframe{
   }
 
   body{
-    background-image: url(https://lh3.googleusercontent.com/proxy/fXwrbOYRwDtBu038TyiivooTYE3jnt521uGv9xW3tOCwSPTejl296W5Ivextg9Wj_ndDRf63p-bAZHp_CM0MeUduvXvji1mT7jQzZU1RzwPT_4KGmaZjRWYCYDCdEFP-Zflwc5HlZ6wtcGWqDcSGeac);
+    background-image: url(https://lh3.googleusercontent.com/proxy/02206pkk50NpRf1Ah_fxu82GCNeNmAOy6IDgTgF-gJEgMRyY_5Kvv9_V2Tx6pQCqhlLuZ9htTT46kR54uueuyjPrAvDDT-E8wS2Km8SUvygw_Rfyb-ej9sI-3xZLUFnujJXq5lu3LSytlDMIpZEutio);
+    background-size:cover;
+    background-position:top;
   }
   .rank-container > div, .results-container > div, .bonus-rank-container > div{
     font-size: 13px;
