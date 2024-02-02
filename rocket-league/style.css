@@ -13,22 +13,16 @@ body {
   width: auto;
 }
 
-.inputs-button > *{
+.inputs-button > * {
   min-height: 21px;
   border: 3px solid black;
 }
 
 h1 {
   color: white;
-  text-shadow:
-        0.05em 0 black,
-        0 0.05em black,
-        -0.05em 0 black,
-        0 -0.05em black,
-        -0.05em -0.05em black,
-        -0.05em 0.05em black,
-        0.05em -0.05em black,
-        0.05em 0.05em black;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
 }
 
 .results-container {
@@ -38,7 +32,8 @@ h1 {
   justify-content: center;
 }
 
-.rank-container, .bonus-rank-container {
+.rank-container,
+.bonus-rank-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   margin-top: 0%;
@@ -55,73 +50,70 @@ h1 {
   display: none;
 }
 
-.rank-container > div, .results-container > div, .bonus-rank-container > div {
+.rank-container > div,
+.results-container > div,
+.bonus-rank-container > div {
   width: auto;
   color: white;
   font-size: 40px;
   background: -webkit-linear-gradient(#9b9b9b, #222222);
   padding-left: 4px;
   padding-right: 4px;
-  text-shadow:
-        0.05em 0 black,
-        0 0.05em black,
-        -0.05em 0 black,
-        0 -0.05em black,
-        -0.05em -0.05em black,
-        -0.05em 0.05em black,
-        0.05em -0.05em black,
-        0.05em 0.05em black;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
 }
 
 .right {
   padding-left: 5px;
 }
 
-img{
+img {
   width: 40px;
   height: 40px;
   padding-left: 5px;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
-iframe{
+iframe {
   width: 700px;
   height: 415px;
 }
-.bonus-rank-container{
+.bonus-rank-container {
   margin-top: 1%;
 }
 
-@media screen and (max-width:430px) {
-  .inputs-button{
+@media screen and (max-width: 430px) {
+  .inputs-button {
     display: grid;
     grid-template-columns: auto;
     grid-row-gap: 1%;
   }
-  iframe{
+  iframe {
     width: 300px;
     height: 200px;
   }
 
-  body{
+  body {
     background-image: url(https://www.pockettactics.com/wp-content/sites/pockettactics/2022/12/rocket-league-wallpaper-6.jpg);
-    background-size:cover;
-    background-position:top;
+    background-size: cover;
+    background-position: top;
   }
-  .rank-container > div, .results-container > div, .bonus-rank-container > div{
+  .rank-container > div,
+  .results-container > div,
+  .bonus-rank-container > div {
     font-size: 13px;
   }
-  img{
+  img {
     width: 15px;
     height: 15px;
     padding-left: 0px;
   }
 
-  .bonus-rank-container{
+  .bonus-rank-container {
     margin-top: 3%;
   }
 }
-

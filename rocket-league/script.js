@@ -40,11 +40,10 @@ let snowDayMMRDiv = document.getElementById("snow-day-mmr");
 let duelImg = document.getElementById("duel-img");
 let doublesImg = document.getElementById("doubles-img");
 let standardImg = document.getElementById("standard-img");
-let hoopsImg=document.getElementById('hoops-img')
-let rumbleImg=document.getElementById('rumble-img')
-let dropshotImg=document.getElementById('dropshot-img')
-let snowDayImg=document.getElementById('snow-day-img')
-
+let hoopsImg = document.getElementById("hoops-img");
+let rumbleImg = document.getElementById("rumble-img");
+let dropshotImg = document.getElementById("dropshot-img");
+let snowDayImg = document.getElementById("snow-day-img");
 
 //All divs that display specific rank
 const allRankDivs = document.querySelectorAll(".rank-value");
@@ -53,7 +52,7 @@ const allRankDivs = document.querySelectorAll(".rank-value");
 const allMMRDivs = document.querySelectorAll(".mmr");
 
 //All divs to reset
-const allReset=document.querySelectorAll('.reset')
+const allReset = document.querySelectorAll(".reset");
 
 //Images for every rank
 const unranked =
@@ -436,8 +435,8 @@ submitButton.addEventListener("click", async (event) => {
     standardImg.innerHTML = grandChamp3;
   }
 
-//adding  hoops div image
-  let hoopsRank = hoopsValueDiv.innerHTML.split("(")[0]
+  //adding  hoops div image
+  let hoopsRank = hoopsValueDiv.innerHTML.split("(")[0];
 
   if (hoopsValueDiv.innerHTML.includes("Unranked")) {
     hoopsImg.innerHTML = unranked;
@@ -506,9 +505,8 @@ submitButton.addEventListener("click", async (event) => {
     hoopsImg.innerHTML = grandChamp3;
   }
 
-
   //Adding Rumble div img
-  let rumbleRank = rumbleValueDiv.innerHTML.split("(")[0]
+  let rumbleRank = rumbleValueDiv.innerHTML.split("(")[0];
 
   if (rumbleValueDiv.innerHTML.includes("Unranked")) {
     rumbleImg.innerHTML = unranked;
@@ -577,9 +575,7 @@ submitButton.addEventListener("click", async (event) => {
     rumbleImg.innerHTML = grandChamp3;
   }
 
-
-
-  let dropshotRank = dropshotValueDiv.innerHTML.split("(")[0]
+  let dropshotRank = dropshotValueDiv.innerHTML.split("(")[0];
 
   if (dropshotValueDiv.innerHTML.includes("Unranked")) {
     dropshotImg.innerHTML = unranked;
@@ -648,74 +644,73 @@ submitButton.addEventListener("click", async (event) => {
     dropshotImg.innerHTML = grandChamp3;
   }
 
-
-  let snowDayRank =snowDayValueDiv.innerHTML.split("(")[0]
+  let snowDayRank = snowDayValueDiv.innerHTML.split("(")[0];
 
   if (snowDayValueDiv.innerHTML.includes("Unranked")) {
-   snowDayImg.innerHTML = unranked;
+    snowDayImg.innerHTML = unranked;
   }
   if (snowDayRank == "Bronze I") {
-   snowDayImg.innerHTML = bronze1;
+    snowDayImg.innerHTML = bronze1;
   }
   if (snowDayRank == "Bronze II") {
-   snowDayImg.innerHTML = bronze2;
+    snowDayImg.innerHTML = bronze2;
   }
   if (snowDayRank == "Bronze III") {
-   snowDayImg.innerHTML = bronze3;
+    snowDayImg.innerHTML = bronze3;
   }
   if (snowDayRank == "Silver I") {
-   snowDayImg.innerHTML = silver1;
+    snowDayImg.innerHTML = silver1;
   }
   if (snowDayRank == "Silver II") {
-   snowDayImg.innerHTML = silver2;
+    snowDayImg.innerHTML = silver2;
   }
   if (snowDayRank == "Silver III") {
-   snowDayImg.innerHTML = silver3;
+    snowDayImg.innerHTML = silver3;
   }
   if (snowDayRank == "Gold I") {
-   snowDayImg.innerHTML = gold1;
+    snowDayImg.innerHTML = gold1;
   }
   if (snowDayRank == "Gold II") {
-   snowDayImg.innerHTML = gold2;
+    snowDayImg.innerHTML = gold2;
   }
   if (snowDayRank == "Gold III") {
-   snowDayImg.innerHTML = gold3;
+    snowDayImg.innerHTML = gold3;
   }
   if (snowDayRank == "Platinum I") {
-   snowDayImg.innerHTML = platinum1;
+    snowDayImg.innerHTML = platinum1;
   }
   if (snowDayRank == "Platinum II") {
-   snowDayImg.innerHTML = platinum2;
+    snowDayImg.innerHTML = platinum2;
   }
   if (snowDayRank == "Platinum III") {
-   snowDayImg.innerHTML = platinum3;
+    snowDayImg.innerHTML = platinum3;
   }
   if (snowDayRank == "Diamond I") {
-   snowDayImg.innerHTML = diamond1;
+    snowDayImg.innerHTML = diamond1;
   }
   if (snowDayRank == "Diamond II") {
-   snowDayImg.innerHTML = diamond2;
+    snowDayImg.innerHTML = diamond2;
   }
   if (snowDayRank == "Diamond III") {
-   snowDayImg.innerHTML = diamond3;
+    snowDayImg.innerHTML = diamond3;
   }
   if (snowDayRank == "Champion I") {
-   snowDayImg.innerHTML = champ1;
+    snowDayImg.innerHTML = champ1;
   }
   if (snowDayRank == "Champion II") {
-   snowDayImg.innerHTML = champ2;
+    snowDayImg.innerHTML = champ2;
   }
   if (snowDayRank == "Champion III") {
-   snowDayImg.innerHTML = champ3;
+    snowDayImg.innerHTML = champ3;
   }
   if (snowDayRank == "Grand Champion I") {
-   snowDayImg.innerHTML = grandChamp1;
+    snowDayImg.innerHTML = grandChamp1;
   }
   if (snowDayRank == "Grand Champion II") {
-   snowDayImg.innerHTML = grandChamp2;
+    snowDayImg.innerHTML = grandChamp2;
   }
   if (snowDayRank == "Grand Champion III") {
-   snowDayImg.innerHTML = grandChamp3;
+    snowDayImg.innerHTML = grandChamp3;
   }
 });
 
@@ -723,7 +718,7 @@ resetButton.addEventListener("click", () => {
   userName.value = "";
   statRank.value = "";
   statType.value = "";
-  for (let reset of allReset){
-    reset.innerHTML=''
+  for (let reset of allReset) {
+    reset.innerHTML = "";
   }
 });
