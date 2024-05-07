@@ -54,9 +54,14 @@ const allMMRDivs = document.querySelectorAll(".mmr");
 //All divs to reset
 const allReset = document.querySelectorAll(".reset");
 
+
+const objUrl="/images"
+const url=`<img src="${objUrl}">`
+
 //Images for every rank
 const unranked =
-  "<img src='https://trackercdn.com/cdn/tracker.gg/rocket-league/ranks/s4-0.png'>";
+
+
 const bronze1 =
   "<img src='https://trackercdn.com/cdn/tracker.gg/rocket-league/ranks/s4-1.png'>";
 const bronze2 =
@@ -722,3 +727,4 @@ resetButton.addEventListener("click", () => {
     reset.innerHTML = "";
   }
 });
+

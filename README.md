@@ -1,6 +1,6 @@
 # Rocket League Website
 
-The purpose of this website is to look up yourselves or any friends stats on the popular game Rocket League! If your stats appear worse than you expected, than you are proabably worse than you expected. There are absolutely 0 statistical mistakes from any data pulled from here.
+The purpose of this website is to look up yourselves or any friends stats on the popular game Rocket League! If your stats appear worse than you expected, then you are proabably worse than you expected. There are absolutely 0 statistical mistakes from any data pulled from here.
 
 <br>
 <br>
@@ -41,5 +41,3 @@ I will be using multiple different stat types, usernames, and ranks, so my code 
 
 <br>
 <br>
-
-# Credits
